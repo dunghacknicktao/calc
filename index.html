@@ -49,9 +49,10 @@
       console.log(but);
       for (var i=0;i<but.length;i++){
         but[i].addEventListener("click",function(){
-          var temp=document.getElementsByClassName("text-view").value;
+          var temp=document.getElementsByClassName("text-view")[0].value;
           temp += this.value;
-          alert(eval(te.value));
+          //alert(temp += this.value);
+          document.getElementsByClassName("text-view")[0].innerHTML=eval(temp);
         });
       }
     </script>
